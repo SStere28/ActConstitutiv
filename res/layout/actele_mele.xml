@@ -1,0 +1,167 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical" >
+       
+    
+        
+
+        <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="6dip" >
+           
+        <!--  The child Views/Layout to flip -->
+       
+        <!--  Layout 1 for 1st Screen -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+                
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="horizontal" >
+                    
+            <TextView
+            
+            android:drawableBottom="@drawable/under"
+            android:textStyle="bold"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Act constitutiv" />
+           <Button
+               android:id="@+id/aga"
+            android:background="@android:color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Hotarare A.G.A." />
+        </LinearLayout> 
+      
+         <LinearLayout 
+          
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         >
+        <LinearLayout
+         android:id="@+id/view1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:padding="8dp" >
+        </LinearLayout>
+        <LinearLayout 
+              android:gravity="center_vertical"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_margin="20dp" >
+        <TextView
+                  android:id="@+id/hint1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="20dp"
+                   />
+        </LinearLayout> 
+        
+        </LinearLayout>
+         
+             
+                
+         
+            
+            
+           
+                </LinearLayout>
+           
+             <!--  Layout 2 for 2nd Screen -->
+             
+           
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"   
+                    android:orientation="vertical" >
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="horizontal" >
+        <Button
+            android:id="@+id/act"
+            android:background="@android:color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Act constitutiv" 
+            android:textStyle="bold"/>
+        <TextView
+            android:textStyle="bold"
+            android:drawableBottom="@drawable/under"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Hotarare A.G.A." />
+        </LinearLayout> 
+
+                    <ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    >
+        <LinearLayout 
+          
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         >
+                    <LinearLayout
+         android:id="@+id/view2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:padding="8dp"
+          >
+        </LinearLayout>
+        
+        <LinearLayout 
+              android:gravity="center_vertical"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_margin="20dp" >
+        <TextView
+                  android:id="@+id/hint2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textSize="20dp"
+                   />
+        </LinearLayout> 
+         
+        </LinearLayout>
+        </ScrollView>
+                   
+                    
+            </LinearLayout>
+           
+
+
+        </ViewFlipper>
+
+</LinearLayout>

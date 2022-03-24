@@ -1,0 +1,3316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="8dp"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/doc_nou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Document nou " />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Salvare document" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vizualizare document" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nume societate : "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:textSize="25dp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Numar Asociati : "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/numarAsoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/Asocitati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Creare Asociati" />
+    </LinearLayout>
+
+    
+     
+                
+    <LinearLayout
+        android:id="@+id/myLayoutId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/asoc1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asociat 1  : "
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/fasoc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Persoana fizica" />
+
+            <RadioButton
+                android:id="@+id/fasoc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Persoana juridica" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/persfizica"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+            
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+
+                <ToggleButton
+                    android:id="@+id/p11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textOff="D-na"
+                    android:textOn="D-nul" />
+
+                <EditText
+                    android:id="@+id/p12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: Vasile Gheorghe" >
+                </EditText>
+
+                <ToggleButton
+                    android:id="@+id/p13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textOff="Străin"
+                    android:textOn="Român" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+
+                <TextView
+            
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="Data nasterii"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="date" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="In"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jud"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Domiciliat(ă) în "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" str."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nr."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" 
+                    android:inputType="number"/>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bl."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sc."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="et."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p43"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ap."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="Judet"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                
+                <RadioGroup
+                  android:id="@+id/radioGroup1"
+                  android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CI"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BI" 
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paşaport" 
+            android:layout_weight="1"/>
+         </RadioGroup>     
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="seria"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p61"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nr."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p62"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="number"/>
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="eliberat de "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p63"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                </LinearLayout>
+                <LinearLayout
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="la data de "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p70"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="date"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CNP "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/p71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="number"/>
+                </LinearLayout>
+        </LinearLayout>
+                  <LinearLayout
+            android:id="@+id/persjuridica"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+             >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S.C."
+            android:textSize="20dp" />
+
+                
+                
+                <EditText
+                    android:id="@+id/j11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: " >
+                </EditText>
+                
+                <ToggleButton
+                    android:id="@+id/toggleSC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textOff="Străin"
+                    android:textOn="Român" />
+                
+              <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sediul"
+            android:textSize="20dp" />  
+              <EditText
+                    android:id="@+id/j12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="in  " >
+                </EditText>
+                </LinearLayout>
+                
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="înregistrată la"
+            android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/j1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: " >
+                </EditText>
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de identificare."
+            android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/j21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: " >
+                </EditText>
+              
+                </LinearLayout>
+                
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reprez. de "
+            android:textSize="20dp" />
+
+                <ToggleButton
+                    android:id="@+id/j31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textOff="D-na"
+                    android:textOn="D-nul" />
+                
+                <EditText
+                    android:id="@+id/j32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: Vasile George" >
+                </EditText>
+              
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conform Hotararii A.G.A a"
+            android:textSize="20dp" />
+
+                
+                <ToggleButton
+             android:id="@+id/asac"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:checked="true"
+             android:textOn="asociaţilor" 
+             android:textOff="acţionarilor"/>
+        
+                 <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" nr."
+            android:textSize="20dp" />
+                
+                <EditText
+                    android:id="@+id/j41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: " 
+                    android:inputType="number">
+        </EditText>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="din data"
+            android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/j42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: "
+                    android:inputType="date"     >
+                </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            
+                 
+                  
+    </LinearLayout>
+    
+     <LinearLayout
+                android:id="@+id/persdinamic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="vertical" >
+
+         
+          <LinearLayout
+                    android:id="@+id/asocd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="vertical" >
+        
+              
+                </LinearLayout>
+         
+         <LinearLayout
+                    android:id="@+id/persfizicad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="vertical" >
+        
+                </LinearLayout>
+                
+         
+                <LinearLayout
+                    android:id="@+id/persjuridicad"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+        
+                </LinearLayout>
+                
+                
+         
+                </LinearLayout>
+                
+                
+
+    
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="12dp"
+        android:text="DENUMIREA, DURATA,SEDIUL SOCIAL" />
+
+    <LinearLayout
+    
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Denumirea"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Denumirea societatii"
+            android:textEditSuggestionItemLayout="@+id/textView1" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disponibilitatea  firmei nr "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            
+            android:inputType="number" >
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Din"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" 
+            android:inputType="number">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliberata de Oficiul Registrului Comerţului de le lângă Tribunalul "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+             >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Durata de functionare:"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/f52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Determinata" />
+
+        <RadioButton
+            android:id="@+id/f51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nedeterminata" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/f61"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="perioada"
+            android:inputType="number" >
+        </EditText>
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sediul este in "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f71"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Str."
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f81"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+
+        <TextView
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nr."
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f82"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" 
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f9"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/f9b1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bl."
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f91"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/f9b2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sc."
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f92"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/f9b3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="et."
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f93"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/f9b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ap."
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f94"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/f10"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <ToggleButton
+            android:id="@+id/f10b4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOn="Judet"
+            android:textOff="Sector"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/f101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/obiectul_de_activitate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" OBIECTUL DE ACTIVITATE AL SOCIETĂŢII " 
+        android:layout_marginBottom="4dp"/>
+
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <TextView
+                        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Domeniu activitate "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/domeniulprincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+    </LinearLayout>
+    
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grupa CAEN "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/GrupaCAEN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:ems="10" />
+    </LinearLayout>
+
+    
+
+     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activitatea principală : "
+            android:textSize="20dp" />
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clasa CAEN "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/GrupaCAEN2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:ems="10" />
+    </LinearLayout>
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Denumerea "
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/Denumirea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        
+            android:ems="10" />
+    </LinearLayout>
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activităţi secundare : "
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:text=" + " />
+
+        <EditText
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:ems="10"
+            android:visibility="gone" >
+
+            <requestFocus />
+        </EditText>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/activitatea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical" >
+        </LinearLayout>
+    
+    
+   <Button
+        android:id="@+id/capitalul_social"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" CAPITALUL SOCIAL, PĂRŢILE SOCIALE " 
+        android:layout_marginBottom="4dp"/>
+   
+   <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+      
+
+          
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="capitalul social subscris şi vărsat este "
+            android:textSize="20dp" 
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/capital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10" 
+             android:layout_weight="1"
+             android:inputType="number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lei , din care :   "
+            android:textSize="20dp"
+             android:layout_weight="1" />
+        
+    </LinearLayout>
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" • "
+            android:textSize="20dp"
+            />
+        
+
+        <EditText
+            android:id="@+id/lei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"        
+            android:ems="10" 
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  lei, aport în numerar;"
+            android:textSize="20dp"
+            android:layout_weight="1"  />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" • "
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/valuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"        
+            android:ems="10" 
+             android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  lei, reprezentand;"
+            android:textSize="20dp"
+            android:layout_weight="1" />
+
+         <EditText
+            android:id="@+id/valuta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"        
+            android:ems="10" 
+            android:inputType="numberDecimal"/>
+        
+         <RadioButton
+            android:id="@+id/v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="EUR" />
+         
+          <RadioButton
+            android:id="@+id/v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+     
+            android:text="USD" />
+           <RadioButton
+            android:id="@+id/v3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+     
+            android:text="ALT." />
+       
+           <EditText
+            android:id="@+id/valuta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:visibility="gone"       
+            android:ems="10" 
+            />
+         
+        
+    </LinearLayout>
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        
+
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  la cursul B.N.R. din data de "
+            android:textSize="20dp"
+            />
+
+         <EditText
+            android:id="@+id/valuta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:inputType="date"       
+            android:ems="10" />
+         
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" , "
+            android:textSize="20dp"
+            />
+         <EditText
+            android:id="@+id/valuta4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+            android:inputType="numberDecimal"       
+            android:ems="10" />
+        
+         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  lei/1"
+            android:textSize="20dp"
+             />
+         
+         <RadioButton
+            android:id="@+id/v4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="EUR" />
+         
+          <RadioButton
+            android:id="@+id/v5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+     
+            android:text="USD" />
+           <RadioButton
+            android:id="@+id/v6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+     
+            android:text="ALT." />
+       
+           <EditText
+            android:id="@+id/valuta5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"        
+            android:ems="10" 
+            android:visibility="gone"/>
+           
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  aport în numerar;"
+            android:textSize="20dp"
+            />
+         
+        
+    </LinearLayout>
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        
+ <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" • "
+            android:textSize="20dp"
+            />
+ 
+        <EditText
+            android:id="@+id/valuta6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"        
+            android:ems="10" 
+             android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  lei, reprezentând "
+            android:textSize="20dp"
+             />
+        <EditText
+            android:id="@+id/valuta7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"        
+            android:ems="10" 
+            android:hint="(descriere bun aportat)"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  aport în natură;  "
+            android:textSize="20dp"
+             />
+        </LinearLayout>
+        
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" fiind împărţit într-un număr de "
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/valuta8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"        
+            android:ems="10" 
+            android:inputType="numberDecimal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="părţi sociale, cu o valoare nominală de"
+            android:textSize="20dp"   />
+        <EditText
+            android:id="@+id/valuta9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"        
+            android:ems="10" 
+            android:inputType="numberDecimal"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" lei/parte socială. "
+            android:textSize="20dp"   />
+             
+        </LinearLayout>
+    
+    
+        
+          
+        
+              
+              
+         <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical" >
+        
+         
+              
+              
+               <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical" >
+        
+             <LinearLayout
+            android:id="@+id/pfp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            android:visibility="gone" >   
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" .. Asociat 1 .."
+                android:textSize="20dp" />   
+                   
+         <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+        
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  Nume "
+                android:textSize="20dp" />
+         
+          <EditText
+                    android:id="@+id/cap1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    >
+                </EditText>
+                
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Prenume "
+                android:textSize="20dp" />
+         
+          <EditText
+                    android:id="@+id/cap2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                     >
+                </EditText>
+         </LinearLayout>
+         
+         <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+        
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" aport la cap. social"
+                android:textSize="20dp" 
+                
+                />
+         
+          <EditText
+                    android:id="@+id/cap3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                      android:inputType="numberDecimal"  />
+               
+          <TextView
+              android:layout_width="210dp"
+              android:layout_height="wrap_content"
+              android:text="%, reprez. un număr de"
+              android:textSize="20dp" />
+         
+          <EditText
+                    android:id="@+id/cap4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                   android:inputType="numberDecimal"
+                     >
+                </EditText>
+                
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="părţi sociale, "
+                android:textSize="20dp" />
+           </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+           
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cu o valoare de"
+                android:textSize="20dp" />
+           
+          <EditText
+                    android:id="@+id/cap5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                     >
+                </EditText>
+                
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lei/p. socială "
+                android:textSize="20dp" />
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" în valoare totală de"
+                android:textSize="20dp" />
+         
+          <EditText
+                    android:id="@+id/cap6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                   android:inputType="numberDecimal"
+                    >
+                </EditText>
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lei , "
+                android:textSize="20dp" />
+           
+         </LinearLayout>
+         
+         <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+        
+              
+                
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" participare la profit"
+                android:textSize="20dp" />
+         
+          <EditText
+                    android:id="@+id/cap7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                android:inputType="numberDecimal"
+                     >
+                </EditText>
+                
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="% şi  participare la pierderi"
+                android:textSize="20dp" />
+         
+          <EditText
+                    android:id="@+id/cap8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+               android:inputType="numberDecimal"
+                     >
+                </EditText>
+                
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%; "
+                android:textSize="20dp" />
+         </LinearLayout>
+         
+         </LinearLayout>
+         </LinearLayout>
+         
+         <LinearLayout
+            android:id="@+id/scp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical" 
+            android:visibility="gone">
+           
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" .. Asociat 1 .."
+                android:textSize="20dp" />
+         <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+        
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  S.C. "
+                android:textSize="20dp" />
+         
+          <EditText
+                    android:id="@+id/cap9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    >
+                </EditText>
+                
+          
+         </LinearLayout>
+         
+         
+         
+         
+         <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+        
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" aport la cap. social"
+                android:textSize="20dp" 
+                
+                />
+         
+          <EditText
+                    android:id="@+id/cap10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+               android:inputType="numberDecimal" />
+               
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="%, reprez. un număr de"
+              android:textSize="20dp" />
+         
+          <EditText
+                    android:id="@+id/cap11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                     android:inputType="numberDecimal"
+                     >
+                </EditText>
+                
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="părţi sociale, "
+                android:textSize="20dp" />
+           </LinearLayout>
+         <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+           
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cu o valoare de"
+                android:textSize="20dp" />
+           
+          <EditText
+                    android:id="@+id/cap12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                android:inputType="numberDecimal"
+                     >
+                </EditText>
+                
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lei/p. socială "
+                android:textSize="20dp" />
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" în valoare totală de"
+                android:textSize="20dp" />
+         
+          <EditText
+                    android:id="@+id/cap13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+               android:inputType="numberDecimal"
+                    >
+                </EditText>
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lei , "
+                android:textSize="20dp" />
+           
+         </LinearLayout>
+        
+         <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+        
+              
+                
+          <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" participare la profit"
+                android:textSize="20dp" />
+         
+          <EditText
+                    android:id="@+id/cap14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                   android:inputType="numberDecimal"
+                     >
+                </EditText>
+                
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="% şi  participare la pierderi"
+                android:textSize="20dp" />
+         
+          <EditText
+                    android:id="@+id/cap15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                     >
+                </EditText>
+                
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="%; "
+                android:textSize="20dp" />
+         </LinearLayout>
+          </LinearLayout>
+         
+             </LinearLayout>  
+               
+        
+              <LinearLayout
+            android:id="@+id/valdin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical" >
+         
+                  </LinearLayout>
+         
+         
+          
+         
+         
+    
+    
+    <Button
+        android:id="@+id/administrarea_societatii"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" ADMINISTRAREA SOCIETĂŢII " 
+        android:layout_marginBottom="4dp"/>
+    
+    <LinearLayout
+            
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administrarea societăţii se face, de către : "
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/admin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Persoana fizica" />
+
+            <RadioButton
+                android:id="@+id/admin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Persoana juridica" />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/persfizicaadm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+            
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+
+                <ToggleButton
+                    android:id="@+id/admt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textOff="D-na"
+                    android:textOn="D-nul" />
+
+                <EditText
+                    android:id="@+id/adm1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: Vasile Gheorghe" >
+                </EditText>
+
+                <ToggleButton
+                    android:id="@+id/admt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textOff="Străin"
+                    android:textOn="Român" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+
+                <TextView
+            
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="Data nasterii"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="date" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="In"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jud"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Domiciliat(ă) în "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" str."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nr."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" 
+                     android:inputType="number"/>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bl."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sc."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="et."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ap."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:text="Judet"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                
+                <RadioGroup
+                  android:id="@+id/radioGroupadm"
+                  android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     >
+
+        <RadioButton
+            android:id="@+id/radioadm1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CI"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioadm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BI" 
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/radioadm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paşaport" 
+            android:layout_weight="1"/>
+         </RadioGroup>     
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="seria"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nr."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="number"/>
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="eliberat de "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                </LinearLayout>
+                <LinearLayout
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="la data de "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="date"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CNP "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/adm17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="number"/>
+                </LinearLayout>
+        </LinearLayout>
+                  <LinearLayout
+            android:id="@+id/persjuridicaadm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+             >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S.C."
+            android:textSize="20dp" />
+
+                
+                
+                <EditText
+                    android:id="@+id/admj1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: " >
+                </EditText>
+                
+                <ToggleButton
+                    android:id="@+id/admjt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textOff="Străin"
+                    android:textOn="Român" />
+                
+              <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sediul"
+            android:textSize="20dp" />  
+              <EditText
+                    android:id="@+id/admj2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="in  " >
+                </EditText>
+                </LinearLayout>
+                
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="înregistrată la Oficiul Registrului Comerţului de pe lângă Tribunalul "
+            android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/admj3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: " >
+                </EditText>
+                </LinearLayout>
+                
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="număr de ordine J "
+            android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/admj4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                     >
+                </EditText>
+                
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de identificare."
+            android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/admj5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    >
+                </EditText>
+                
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" CUI "
+            android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/admj6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                     android:inputType="number" >
+                </EditText>
+              
+                </LinearLayout>
+                
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reprez. de "
+            android:textSize="20dp" />
+
+                <ToggleButton
+                    android:id="@+id/admjt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textOff="D-na"
+                    android:textOn="D-nul" />
+                
+                <EditText
+                    android:id="@+id/admj7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: Vasile George" >
+                </EditText>
+              
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conform Hotararii A.G.A"
+            android:textSize="20dp" />
+
+                 
+                <ToggleButton
+             android:id="@+id/admasac"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:checked="true"
+             android:textOn="asociaţilor" 
+             android:textOff="acţionarilor"/>
+                
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" nr."
+            android:textSize="20dp" />
+                
+                <EditText
+                    android:id="@+id/admj8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                   
+                    android:inputType="number">
+        </EditText>
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="din data"
+            android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/admj9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                   
+                    android:inputType="date"     >
+                </EditText>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <LinearLayout
+        
+         android:id="@+id/durata"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+                
+                
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" pe o perioadă "
+            android:textSize="20dp" />
+
+                <RadioGroup
+                  android:id="@+id/radioGroupadmj"
+                  android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     >
+
+        <RadioButton
+            android:id="@+id/radioadmj1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Nelimitata"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioadmj2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  De " 
+            android:layout_weight="1"/>
+                
+        </RadioGroup>
+                
+                <EditText
+                    android:id="@+id/admj10"
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:clickable="false"
+                    
+                    android:inputType="number"     />
+                
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ani"
+            android:textSize="20dp" />
+                
+                
+                
+                </LinearLayout>
+                  
+    
+
+    <Button
+        android:id="@+id/controlul_societatii"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=" CONTROLUL ACTIVITĂŢII SOCIETĂŢII " 
+        android:layout_marginBottom="4dp"/>
+    
+    <LinearLayout
+        
+       
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La data prezentului act constitutiv este numit : "
+            android:textSize="20dp" />
+        
+        <RadioButton
+                android:id="@+id/cenzorr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cenzor " />
+
+            <RadioButton
+                android:id="@+id/auditorr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="auditor financiar" />
+            
+            
+       <RadioButton
+                android:id="@+id/asociati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Asociati" />
+       
+           </LinearLayout> 
+
+        
+        
+    
+    
+    <LinearLayout
+        
+        android:id="@+id/pfl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        
+        
+    <RadioButton
+                android:id="@+id/pf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Persoana fizica " />
+
+            <RadioButton
+                android:id="@+id/pj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Persoana juridica" />
+            
+    </LinearLayout>
+            
+   <LinearLayout
+        
+        android:id="@+id/cenzor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/persfizicac"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+            
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+
+                <ToggleButton
+                    android:id="@+id/c1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textOff="D-na"
+                    android:textOn="D-nul" />
+
+                <EditText
+                    android:id="@+id/c2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: Vasile Gheorghe" >
+                </EditText>
+
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+
+                <TextView
+            
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="Data nasterii"
+                    android:textSize="20dp" />
+            
+                
+                <EditText
+                    android:id="@+id/c3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="date" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:text="In"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" >
+                </EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jud"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Domiciliat(ă) în "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" str."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nr."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bl."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+        
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sc."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="et."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ap."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                  android:id="@+id/radioGroupc1"
+                  android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     >
+
+        <RadioButton
+            android:id="@+id/radioc11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Judet"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioc12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sector" 
+            android:layout_weight="1"/>
+
+        
+         </RadioGroup>     
+
+                <EditText
+                    android:id="@+id/c13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                
+                <RadioGroup
+                  android:id="@+id/radioGroupc2"
+                  android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    
+                     >
+
+        <RadioButton
+            android:id="@+id/radioc21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="CI"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioc22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BI" 
+            android:layout_weight="1"/>
+
+         </RadioGroup>     
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="seria"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nr."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="number"/>
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="eliberat de "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                </LinearLayout>
+                <LinearLayout
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="la data de "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="date"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="până la data de  "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="date"/>
+                </LinearLayout>
+                
+                <LinearLayout
+     
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        
+         >
+               <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CNP  "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/c19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="number"/> 
+                    </LinearLayout>
+                </LinearLayout>
+                  <LinearLayout
+            android:id="@+id/persjuridicac"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+             >
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+                
+                      <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S.C."
+            android:textSize="20dp" />
+
+                
+                
+                <EditText
+                    android:id="@+id/cj1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint=" " />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sediul în "
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/cj"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" str."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/cj2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nr."
+                    android:textSize="20dp" 
+                    android:inputType="number"/>
+
+                <EditText
+                    android:id="@+id/cj3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                
+            </LinearLayout>
+            
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bl."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/cj4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="sc."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/cj5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="et."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/cj6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ap."
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/cj7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:text="-" />
+            </LinearLayout>
+           
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal" >
+
+                <RadioGroup
+                  android:id="@+id/radioGroupc3"
+                  android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                     >
+
+        <RadioButton
+            android:id="@+id/radioc31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Judet"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/radioc32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sector" 
+            android:layout_weight="1"/>
+
+        
+         </RadioGroup>     
+
+                <EditText
+                    android:id="@+id/cs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" />
+                
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                    
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="înmatriculată la Registrul Comerţului "
+            android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/cj8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: " />
+              
+                </LinearLayout>
+                
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cu j/"
+            android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/cj9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+               
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:textSize="20dp" />
+              
+                <EditText
+                    android:id="@+id/cj10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+               
+                
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:textSize="20dp" />
+                
+                <EditText
+                    android:id="@+id/cj11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="number"/>
+               
+                
+                
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  CUI "
+            android:textSize="20dp" />
+                
+                <EditText
+                    android:id="@+id/cj12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10" 
+                    android:inputType="number"/>
+               
+                
+                </LinearLayout>
+                
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reprez. de "
+            android:textSize="20dp" />
+
+                <ToggleButton
+                    android:id="@+id/cj13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textOff="D-na"
+                    android:textOn="D-nul" />
+                
+                <EditText
+                    android:id="@+id/cj14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Ex: Vasile George" />
+               
+              
+                </LinearLayout>
+                
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:orientation="horizontal" >
+       
+                <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="până la data de "
+            android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/cj15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    
+                    android:inputType="date" />
+        
+                    
+                    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" expert contabil autorizat."
+            android:textSize="20dp" />
+       
+            
+                </LinearLayout>
+            </LinearLayout>
+     
+       
+
+       
+
+        
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/auditor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal" >
+
+        
+        
+
+        
+
+        
+        
+    </LinearLayout>
+    
+</LinearLayout>
+</ScrollView>
